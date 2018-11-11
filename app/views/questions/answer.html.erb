@@ -1,0 +1,11 @@
+<h1>The answer you deserve</h1>
+<p> <%= @query %> </p>
+<p>-You</p>
+<% if @query == "I am going to work" %>
+<p>Great!</p>
+<% elsif @query[-1] == "?" %>
+<p>Silly question, get dressed and go to work!</p>
+<% else %>
+<p>I don't care, get dressed and go to work!</p>
+<%end%>
+<p>- Your Coach</p>
